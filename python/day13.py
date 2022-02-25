@@ -34,7 +34,7 @@ d = fold(folds[0:1],data)
 print(len(d))  # part 1
 
 
-def print_message(data, folds):
+def print_message(folds, data):
     x,y = 0,0
     for i in range(len(folds)-1,-1,-1):
         if folds[i][0] != 0 and x == 0:
@@ -56,4 +56,4 @@ def print_message(data, folds):
         print(line, end = "\n")
 
 d2 = fold(folds, data)
-print_message(d2, folds)     # part 2
+print_message(folds, d2)     # part 2
